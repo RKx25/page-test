@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Совинто — IT-решения для высшей школы</title>
+        <link rel="icon"
+              type="image/svg+xml"
+              href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%234274D4'/><text x='50%25' y='73%25' text-anchor='middle' font-family='Georgia,serif' font-size='19' font-weight='bold' fill='white'>С</text></svg>">
+            <link rel="stylesheet" href="static/css/style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Inter:wght@300;400;500;600&display=swap"
+                  rel="stylesheet">
+        </head>
+        <body>
+            <!-- NAV -->
+            <nav>
+                <div class="nav-in">
+                    <a href="#" class="nav-logo">
+                        <img src="static/images/logo.svg" alt="Совинто" width="162" height="60">
+                    </a>
+                    <ul class="nav-links" id="navLinks">
+                        <li>
+                            <a href="#values">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#competencies">Компетенции</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="#stack">Технологии</a>
+                        </li>
+                        <li>
+                            <a href="#pricing">Стоимость</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="nav-r">
+                        <a href="tel:+74952320162" class="nav-phone">+7 (495) 232-01-62</a>
+                        <a href="#contact" class="btn btn-blue">Оставить заявку</a>
+                    </div>
+                    <button class="burger" id="burger" aria-label="Меню">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- HERO -->
+            <section id="hero">
+                <div class="hero-pat"></div>
+                <div class="hero-glow"></div>
+                <div class="container">
+                    <div class="hero-in">
+                        <div class="hero-content">
+                            <div class="badge">
+                                <div class="bdot"></div>
+                                Аккредитованная IT-компания · с 2004 года
+                            </div>
+                            <h1>
+                                Современные информационные <em>технологии</em> в образовании
+                            </h1>
+                            <p>
+                                «Совинто» — 20 лет разработки EdTech-решений для российских вузов. Автоматизируем приёмную кампанию, учебный процесс и управление данными, помогая университетам уверенно двигаться к цифровой трансформации.
+                            </p>
+                            <div class="hero-acts">
+                                <a href="#contact" class="btn btn-blue btn-lg">
+                                    <svg width="17"
+                                         height="17"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.5"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 010 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z" />
+                                    </svg>
+                                    Получить консультацию
+                                </a>
+                                <a href="#projects" class="btn btn-out btn-lg">Наши проекты</a>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="hs">
+                                    <strong>20+</strong><span>лет на рынке</span>
+                                </div>
+                                <div class="hs">
+                                    <strong>55 000+</strong><span>пользователей</span>
+                                </div>
+                                <div class="hs">
+                                    <strong>5</strong><span>вузов на поддержке</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hcards">
+                            <div class="hc">
+                                <div class="hc-ico">🎓</div>
+                                <div class="hc-t">
+                                    <div class="hc-title">КРУЗ — управление вузом</div>
+                                    <div class="hc-sub">Комплексная ERP на 1С</div>
+                                </div>
+                                <div class="hc-val">5 вузов</div>
+                            </div>
+                            <div class="hc">
+                                <div class="hc-ico">📋</div>
+                                <div class="hc-t">
+                                    <div class="hc-title">Электронная приёмная</div>
+                                    <div class="hc-sub">Приём документов online</div>
+                                </div>
+                                <div class="hc-val">100%</div>
+                            </div>
+                            <div class="hc">
+                                <div class="hc-ico">📱</div>
+                                <div class="hc-t">
+                                    <div class="hc-title">Личный кабинет студента</div>
+                                    <div class="hc-sub">iOS · Android · Web</div>
+                                </div>
+                                <div class="hc-val">55K+</div>
+                            </div>
+                            <div class="hc accent">
+                                <div class="hc-ico">🤖</div>
+                                <div class="hc-t">
+                                    <div class="hc-title">AI / NLP / CV решения</div>
+                                    <div class="hc-sub">Нейросети в EdTech</div>
+                                </div>
+                                <div class="hc-val">New</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- VALUES -->
+            <section id="values">
+                <div class="container">
+                    <div class="reveal">
+                        <div class="lbl">Наши ценности</div>
+                        <h2>Принципы, на которых строится работа</h2>
+                    </div>
+                    <div class="val-grid reveal">
+                        <div class="vc">
+                            <div class="v-ico">
+                                <svg width="22"
+                                     height="22"
+                                     viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="1.5"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                </svg>
+                            </div>
+                            <h3>Качественный продукт</h3>
+                            <p>
+                                Разрабатываем надёжные решения, которые работают без сбоев годами. Каждый проект проходит многоуровневое тестирование перед внедрением в учебный процесс вуза.
+                            </p>
+                        </div>
+                        <div class="vc">
+                            <div class="v-ico">
+                                <svg width="22"
+                                     height="22"
+                                     viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="1.5"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                                </svg>
+                            </div>
+                            <h3>Достойные условия труда</h3>
+                            <p>
+                                Профессиональный рост, конкурентная оплата и комфортная среда — основа нашей команды. Мотивированные специалисты создают решения, которые меняют образование.
+                            </p>
+                        </div>
+                        <div class="vc">
+                            <div class="v-ico">
+                                <svg width="22"
+                                     height="22"
+                                     viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="1.5"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" /><polyline points="16 7 22 7 22 13" />
+                                </svg>
+                            </div>
+                            <h3>Ориентация на лидерство</h3>
+                            <p>
+                                Постоянно инвестируем в AI/ML-исследования и новые технологии, чтобы вузы-партнёры всегда оставались на шаг впереди в цифровой трансформации.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- COMPETENCIES -->
+            <section id="competencies">
+                <div class="container">
+                    <div class="reveal">
+                        <div class="lbl">Что мы умеем</div>
+                        <h2>Компетенции компании</h2>
+                    </div>
+                    <div class="comp-list reveal">
+                        <div class="ci-item">
+                            <div class="ci-num">01</div>
+                            <div class="ci-b">
+                                <h3>1С и WEB-разработка</h3>
+                                <p>Корпоративные системы на платформе 1С и современные веб-приложения под задачи высшей школы.</p>
+                            </div>
+                        </div>
+                        <div class="ci-item">
+                            <div class="ci-num">02</div>
+                            <div class="ci-b">
+                                <h3>Мобильные приложения</h3>
+                                <p>iOS и Android-приложения для студентов, преподавателей и администрации вуза.</p>
+                            </div>
+                        </div>
+                        <div class="ci-item">
+                            <div class="ci-num">03</div>
+                            <div class="ci-b">
+                                <h3>Импортозамещение</h3>
+                                <p>Перевод инфраструктуры на отечественный стек: АстраЛинукс, РЕД ОС и совместимое ПО.</p>
+                            </div>
+                        </div>
+                        <div class="ci-item">
+                            <div class="ci-num">04</div>
+                            <div class="ci-b">
+                                <h3>Нейросети — AI / CV / NLP</h3>
+                                <p>Интеллектуальная аналитика, компьютерное зрение и обработка естественного языка для EdTech.</p>
+                            </div>
+                        </div>
+                        <div class="ci-item">
+                            <div class="ci-num">05</div>
+                            <div class="ci-b">
+                                <h3>Облачные решения / ЦОД</h3>
+                                <p>Собственный центр обработки данных — надёжный хостинг и масштабируемая облачная инфраструктура.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PROJECTS -->
+            <section id="projects">
+                <div class="container">
+                    <div class="reveal">
+                        <div class="lbl">Кейсы</div>
+                        <h2>Проекты, которые работают</h2>
+                    </div>
+                    <div class="acc reveal" id="accordion">
+                        <div class="ai open">
+                            <div class="ah">
+                                <div class="ah-l">
+                                    <div class="atag">1С / ERP</div>
+                                    <h3>КРУЗ — Комплексное решение управления вузом</h3>
+                                </div>
+                                <div class="atog">
+                                    <svg width="13"
+                                         height="13"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2.2"
+                                         stroke-linecap="round">
+                                        <line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ab">
+                                <div class="ab-in">
+                                    <p>
+                                        Флагманский продукт — единая информационная система управления учебным процессом на базе 1С. Охватывает всю деятельность вуза: от планирования учебных планов до формирования статистической отчётности в Минобрнауки.
+                                    </p>
+                                    <div class="af-list">
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Управление контингентом
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Учебные планы и расписание
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Финансовый учёт и стипендии
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Государственная отчётность
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Интеграция с ГИС ФРДО
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ai">
+                            <div class="ah">
+                                <div class="ah-l">
+                                    <div class="atag">Web / 1С</div>
+                                    <h3>Электронная приёмная комиссия</h3>
+                                </div>
+                                <div class="atog">
+                                    <svg width="13"
+                                         height="13"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2.2"
+                                         stroke-linecap="round">
+                                        <line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ab">
+                                <div class="ab-in">
+                                    <p>
+                                        Полностью цифровая система подачи документов и управления приёмной кампанией. Абитуриенты подают заявления онлайн, приёмная комиссия видит статусы в реальном времени и управляет конкурсными списками.
+                                    </p>
+                                    <div class="af-list">
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Личный кабинет абитуриента
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Загрузка документов online
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Интеграция с Госуслугами
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Конкурсные списки live
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Автоматическое зачисление
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ai">
+                            <div class="ah">
+                                <div class="ah-l">
+                                    <div class="atag">Mobile / Web</div>
+                                    <h3>Личный кабинет студента</h3>
+                                </div>
+                                <div class="atog">
+                                    <svg width="13"
+                                         height="13"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2.2"
+                                         stroke-linecap="round">
+                                        <line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ab">
+                                <div class="ab-in">
+                                    <p>
+                                        Мобильное и веб-приложение, объединяющее все сервисы для студентов: расписание, оценки, задолженности, доступ к цифровой зачётной книжке и общение с деканатом. Доступно 24/7 с любого устройства.
+                                    </p>
+                                    <div class="af-list">
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Расписание и замены online
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Электронная зачётная книжка
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Push-уведомления
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            Чат с деканатом
+                                        </div>
+                                        <div class="af">
+                                            <div class="af-dot"></div>
+                                            iOS и Android
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- STACK -->
+            <section id="stack">
+                <div class="container">
+                    <div class="reveal">
+                        <div class="lbl">Технологии</div>
+                        <h2>Технологический стек</h2>
+                    </div>
+                    <div class="stack-wrap reveal">
+                        <div class="sp">
+                            <div class="sd" style="background:#FF7B00"></div>
+                            PHP
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#3572A5"></div>
+                            Python
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#CC2229"></div>
+                            1С Предприятие
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#00618A"></div>
+                            MySQL
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#2496ED"></div>
+                            Docker
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#FC6D26"></div>
+                            GitLab CI/CD
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#339933"></div>
+                            Node.js
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#F05138"></div>
+                            Swift
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#B07219"></div>
+                            Java
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#1572B6"></div>
+                            HTML / CSS
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#4274D4"></div>
+                            АстраЛинукс
+                        </div>
+                        <div class="sp">
+                            <div class="sd" style="background:#61DAFB"></div>
+                            React
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- NUMBERS -->
+            <section id="numbers">
+                <div class="container">
+                    <div class="num-grid reveal">
+                        <div class="ni">
+                            <div class="nv">20+</div>
+                            <div class="nl">реализованных проектов</div>
+                        </div>
+                        <div class="ni">
+                            <div class="nv">55 000+</div>
+                            <div class="nl">пользователей систем</div>
+                        </div>
+                        <div class="ni">
+                            <div class="nv">5</div>
+                            <div class="nl">вузов на постоянной поддержке</div>
+                        </div>
+                        <div class="ni">
+                            <div class="nv">2004</div>
+                            <div class="nl">год основания компании</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PARTNERS -->
+            <section id="partners">
+                <div class="container">
+                    <div class="reveal">
+                        <div class="lbl">Партнёры и клиенты</div>
+                        <h2>Работаем с лучшими</h2>
+                    </div>
+                    <div class="p-grid reveal">
+                        <div class="pc">
+                            <div class="p-name">Аплана</div>
+                            <div class="p-type">IT-интегратор</div>
+                        </div>
+                        <div class="pc">
+                            <div class="p-name">1С</div>
+                            <div class="p-type">Официальный партнёр</div>
+                        </div>
+                        <div class="pc">
+                            <div class="p-name">Астра</div>
+                            <div class="p-type">АстраЛинукс</div>
+                        </div>
+                        <div class="pc">
+                            <div class="p-name">PIX</div>
+                            <div class="p-type">RPA-платформа</div>
+                        </div>
+                        <div class="pc">
+                            <div class="p-name">МФЮА</div>
+                            <div class="p-type">Вуз-партнёр</div>
+                        </div>
+                        <div class="pc">
+                            <div class="p-name">МАСИ</div>
+                            <div class="p-type">Вуз-партнёр</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PRICING -->
+            <section id="pricing">
+                <div class="container">
+                    <div class="reveal">
+                        <div class="lbl">Стоимость</div>
+                        <h2>Прозрачные тарифы</h2>
+                    </div>
+                    <div class="pr-grid reveal">
+                        <div class="prc">
+                            <div class="pr-name">Web-сайты</div>
+                            <div class="pr-val">
+                                2 500 <span style="font-size:1.3rem;font-weight:400;color:var(--sub)">₽</span>
+                            </div>
+                            <div class="pr-unit">от / час работы специалиста</div>
+                            <div class="pr-div"></div>
+                            <div class="pr-feats">
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    Современный дизайн
+                                </div>
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    Адаптивная вёрстка
+                                </div>
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    CMS на выбор
+                                </div>
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    SEO-оптимизация
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prc feat">
+                            <div class="pr-badge">Популярное</div>
+                            <div class="pr-name">Битрикс24</div>
+                            <div class="pr-val">
+                                3 000 <span style="font-size:1.3rem;font-weight:400;color:var(--sub)">₽</span>
+                            </div>
+                            <div class="pr-unit">от / час работы специалиста</div>
+                            <div class="pr-div"></div>
+                            <div class="pr-feats">
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    Настройка CRM и порталов
+                                </div>
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    Интеграции с 1С
+                                </div>
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    Бизнес-процессы
+                                </div>
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    Обучение пользователей
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prc">
+                            <div class="pr-name">1С-разработка</div>
+                            <div class="pr-val">
+                                3 500 <span style="font-size:1.3rem;font-weight:400;color:var(--sub)">₽</span>
+                            </div>
+                            <div class="pr-unit">от / час работы специалиста</div>
+                            <div class="pr-div"></div>
+                            <div class="pr-feats">
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    Доработка конфигураций
+                                </div>
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    Интеграция с внешними АС
+                                </div>
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    Нагрузочное тестирование
+                                </div>
+                                <div class="pf">
+                                    <div class="pf-c">✓</div>
+                                    Поддержка и сопровождение
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="pr-note reveal">
+                        * Итоговая стоимость проекта рассчитывается индивидуально после анализа технического задания
+                    </p>
+                </div>
+            </section>
+            <!-- CONTACT -->
+            <section id="contact" style="background:var(--bg-soft)">
+                <div class="container">
+                    <div class="ct-layout">
+                        <div class="ct-info reveal">
+                            <div class="lbl">Контакты</div>
+                            <h2>Давайте обсудим ваш проект</h2>
+                            <p class="ct-intro">
+                                Оставьте заявку, и наш менеджер свяжется с вами в течение одного рабочего дня для обсуждения задачи.
+                            </p>
+                            <div class="ct-items">
+                                <div class="ct-it">
+                                    <div class="ct-ico">
+                                        <svg width="20"
+                                             height="20"
+                                             viewBox="0 0 24 24"
+                                             fill="none"
+                                             stroke="currentColor"
+                                             stroke-width="1.5"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round">
+                                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 010 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="ct-lbl">Телефон</div>
+                                        <div class="ct-val">
+                                            <a href="tel:+74952320162">+7 (495) 232-01-62</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ct-it">
+                                    <div class="ct-ico">
+                                        <svg width="20"
+                                             height="20"
+                                             viewBox="0 0 24 24"
+                                             fill="none"
+                                             stroke="currentColor"
+                                             stroke-width="1.5"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                            <polyline points="22,6 12,13 2,6" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="ct-lbl">Email</div>
+                                        <div class="ct-val">
+                                            <a href="mailto:info@sovinto.ru">info@sovinto.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ct-it">
+                                    <div class="ct-ico">
+                                        <svg width="20"
+                                             height="20"
+                                             viewBox="0 0 24 24"
+                                             fill="none"
+                                             stroke="currentColor"
+                                             stroke-width="1.5"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                            <circle cx="12" cy="10" r="3" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="ct-lbl">Адрес</div>
+                                        <div class="ct-val">г. Москва, ул. Плещеева, д. 16А</div>
+                                        <a href="#"
+                                           class="req-link"
+                                           onclick="alert('PDF с реквизитами будет доступен после публикации сайта');return false">
+                                            <svg width="13"
+                                                 height="13"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 stroke="currentColor"
+                                                 stroke-width="1.5"
+                                                 stroke-linecap="round"
+                                                 stroke-linejoin="round">
+                                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                                <polyline points="14 2 14 8 20 8" />
+                                            </svg>
+                                            Скачать реквизиты (PDF)
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-box">
+                                <div class="map-lines"></div>
+                                <div class="map-cnt">
+                                    <svg width="26"
+                                         height="26"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="var(--blue)"
+                                         stroke-width="1.5"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    <span>г. Москва, ул. Плещеева, д. 16А</span>
+                                    <span style="font-size:.73rem;color:var(--dim)">Карта — после публикации</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-box reveal">
+                            <div class="fhead">
+                                <h3>Оставить заявку</h3>
+                                <p>Заполните форму — свяжемся в течение 1 рабочего дня</p>
+                            </div>
+                            <div id="formFields">
+                                <div class="f-fields">
+                                    <div class="ff">
+                                        <label for="fname">Ваше имя *</label>
+                                        <input type="text" id="fname" placeholder="Иван Иванов" autocomplete="name">
+                                    </div>
+                                    <div class="ff">
+                                        <label for="fphone">Телефон *</label>
+                                        <input type="tel"
+                                               id="fphone"
+                                               placeholder="+7 (___) ___-__-__"
+                                               autocomplete="tel">
+                                    </div>
+                                    <div class="ff">
+                                        <label for="femail">Email</label>
+                                        <input type="email"
+                                               id="femail"
+                                               placeholder="rector@university.ru"
+                                               autocomplete="email">
+                                    </div>
+                                    <div class="ff">
+                                        <label for="fmsg">Сообщение</label>
+                                        <textarea id="fmsg" rows="4" placeholder="Расскажите о задаче вашего вуза…"></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn btn-blue"
+                                        id="submitBtn"
+                                        style="width:100%;
+                                               justify-content:center;
+                                               border-radius:10px;
+                                               padding:14px"
+                                        type="button">
+                                    <svg width="15"
+                                         height="15"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.5"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                    </svg>
+                                    Отправить заявку
+                                </button>
+                                <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных</p>
+                            </div>
+                            <div class="form-ok" id="formOk">
+                                <div class="ok-ico">
+                                    <svg width="28"
+                                         height="28"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="var(--blue)"
+                                         stroke-width="2"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </div>
+                                <h3 style="margin:0">Заявка отправлена!</h3>
+                                <p style="color:var(--sub);font-size:.9rem">Наш менеджер свяжется с вами в течение 1 рабочего дня</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FOOTER -->
+            <footer>
+                <div class="ft-in">
+                    <div class="ft-logo">
+                        <img src="static/images/logo-footer.svg"
+                             width="207"
+                             height="76"
+                             alt="logo">
+                    </div>
+                    <div class="ft-copy">
+                        © Sovinto2026<span>&nbsp; ООО «Совинто»&nbsp;</span><span>ИНН: 7725508490</span>
+                        <br>
+                        <span>Сделал Власов Михаил для дипломного проекта</span>
+                    </div>
+                    <a href="tel:+74952320162" class="ft-phone">+7 (495) 232-01-62</a>
+                </div>
+            </footer>
+            <script>
+// Burger
+const burger=document.getElementById('burger'),navLinks=document.getElementById('navLinks');
+burger.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+// Accordion
+document.querySelectorAll('.ah').forEach(h=>{
+  h.addEventListener('click',()=>{
+    const item=h.closest('.ai'),was=item.classList.contains('open');
+    document.querySelectorAll('.ai').forEach(i=>i.classList.remove('open'));
+    if(!was)item.classList.add('open');
+  });
+});
+
+// Scroll reveal
+const ro=new IntersectionObserver(entries=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*65);ro.unobserve(e.target);}
+  });
+},{threshold:.07,rootMargin:'0px 0px -28px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+
+// Counter
+function countUp(el,target,suf){
+  const dur=1700,start=performance.now();
+  (function step(now){
+    const p=Math.min((now-start)/dur,1),ease=1-Math.pow(1-p,3);
+    el.textContent=Math.round(ease*target).toLocaleString('ru')+suf;
+    if(p<1)requestAnimationFrame(step);
+  })(performance.now());
+}
+const numData=[{v:20,s:'+'},{v:55000,s:'+'},{v:5,s:''},{v:2004,s:''}];
+new IntersectionObserver(e=>{
+  e.forEach(en=>{
+    if(en.isIntersecting){
+      en.target.querySelectorAll('.nv').forEach((el,i)=>{if(numData[i])countUp(el,numData[i].v,numData[i].s);});
+    }
+  });
+},{threshold:.3}).observe(document.querySelector('.num-grid'));
+
+// Form
+document.getElementById('submitBtn').addEventListener('click',()=>{
+  const name=document.getElementById('fname').value.trim();
+  const phone=document.getElementById('fphone').value.trim();
+  const email=document.getElementById('femail').value.trim();
+  const msg=document.getElementById('fmsg').value.trim();
+  const mark=(id,bad)=>document.getElementById(id).style.borderColor=bad?'#D93025':'';
+  if(!name||!phone){mark('fname',!name);mark('fphone',!phone);setTimeout(()=>{mark('fname',false);mark('fphone',false);},2200);return;}
+  console.log('[Совинто] Заявка:',{name,phone,email,msg,ts:new Date().toISOString()});
+  document.getElementById('formFields').style.display='none';
+  document.getElementById('formOk').style.display='flex';
+});
+            </script>
+        </body>
+    </html>
